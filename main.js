@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 const nav = document.querySelector(".top-nav");
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const closeBtn = document.querySelector(".close-btn");
@@ -99,5 +101,7 @@ topics.forEach(topic => {
         .catch(function (error) {
             console.error("読み込みエラー:", error);
         });
+
+    });
 
 });
