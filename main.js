@@ -31,7 +31,7 @@ elemBody.addEventListener("click", function (event) {
 
 
 const topics = [
-    { label: "blogger", elementId: "blogger-posts" },
+    { label: "Blogger", elementId: "blogger-posts" },
     { label: "新規就農", elementId: "farming-posts" },
     { label: "顎変形症", elementId: "jaw-deformities-posts" }
 ];
