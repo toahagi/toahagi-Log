@@ -35,7 +35,7 @@ const topics = [
 ];
 
 topics.forEach(topic => {
-    const feedUrl = `http://toahagi.blogspot.com/feeds/posts/default/-/${topic.label}?alt=json&max-results=6`;
+    const feedUrl = `https://toahagi.blogspot.com/feeds/posts/default/-/${topic.label}?alt=json&max-results=6`;
 
     fetch(feedUrl)
         .then(function (response) {
