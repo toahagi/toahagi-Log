@@ -79,7 +79,7 @@ topics.forEach(topic => {
 
                     // ★ 画像サイズを変更：例 s400（幅400px）に
                     if (media) {
-                        img = media.url.replace(/\/s\d{2,4}(-c)?\//, "/s400/");
+                        img = media.url.replace(/\/s\d+(-[wh]\d+)*-c\//, "/s400/");
                     }
                 
                 // カードHTMLを追加
@@ -111,6 +111,7 @@ topics.forEach(topic => {
     });
 
 });
+
 
 
 
