@@ -81,12 +81,12 @@ topics.forEach(topic => {
                     <li class="blogpost-card">
                         <article>
                             <a href="${link}">
-                                <div class="thumbnail-wrapper">
-                                    <img class="thumbnail-image" src="${img}" alt="${title}">
+                                <div class="topic-card-thumbnail-wrapper">
+                                    <img class="topic-card-thumbnail-image" src="${img}" alt="${title}">
                                 </div>
-                                <h3 class="post-title">${title}</h3>
-                                <time datetime="${isoDate}" class="post-datetime">${date}</time>
-                                <p class="topic-post-body">
+                                <h3 class="topic-card-post-title">${title}</h3>
+                                <time datetime="${isoDate}" class="topic-card-post-datetime">${date}</time>
+                                <p class="topic-card-post-body">
                                     ${summary}
                                 </p>
                             </a>
@@ -105,4 +105,5 @@ topics.forEach(topic => {
     });
 
 });
+
 
