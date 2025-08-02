@@ -73,9 +73,15 @@ topics.forEach(topic => {
                 const date = dateObj.toLocaleDateString();
                 const isoDate = dateObj.toISOString();
 
+                //サムネイルを取得
                 const media = entry.media$thumbnail;
                 const img = media ? media.url : "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhntAjVSwoX7ti2bggLSX6ftW_M-Ym0x9uelKlfwHAeoPcfHEwsWGCOqYUlFuWSXVhGsnFWm31j7CyWawIyeS-LdJPq8piyJj7qvEUEe738bP5Wco_c_CVBWyERdwSxeMP8gs3mp2Wb38Y04m6PyYHRgR9fQXqb-Gy_QQZpO3B6qUKH0qi_C8Wwd0B4Fic/s1920/bg-image.jpg";
 
+                    // ★ 画像サイズを変更：例 s400（幅400px）に
+                    if (media) {
+                        img = media.url.replace(/\/s\d{2,4}(-c)?\//, "/s400/");
+                    }
+                
                 // カードHTMLを追加
                 container.innerHTML += `
                     <li class="blogpost-card">
@@ -105,5 +111,6 @@ topics.forEach(topic => {
     });
 
 });
+
 
 
