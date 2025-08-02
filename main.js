@@ -66,7 +66,7 @@ topics.forEach(topic => {
 
                 // content または summary を使って本文要約を作る
                 const content = entry.content?.$t || entry.summary?.$t || "";
-                const summary = content.replace(/<[^>]+>/g, "").substring(0, 150);
+                const summary = content.replace(/<[^>]+>/g, "").substring(0, 80);
 
                 // 日付を整形
                 const dateObj = new Date(entry.published.$t);
@@ -86,7 +86,7 @@ topics.forEach(topic => {
                                 </div>
                                 <h3 class="post-title">${title}</h3>
                                 <time datetime="${isoDate}" class="post-datetime">${date}</time>
-                                <p class="post-body">
+                                <p class="topic-post-body">
                                     ${summary}
                                 </p>
                             </a>
@@ -105,3 +105,4 @@ topics.forEach(topic => {
     });
 
 });
+
