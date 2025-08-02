@@ -75,7 +75,7 @@ topics.forEach(topic => {
 
                 //サムネイルを取得
                 const media = entry.media$thumbnail;
-                const img = media ? media.url : "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhntAjVSwoX7ti2bggLSX6ftW_M-Ym0x9uelKlfwHAeoPcfHEwsWGCOqYUlFuWSXVhGsnFWm31j7CyWawIyeS-LdJPq8piyJj7qvEUEe738bP5Wco_c_CVBWyERdwSxeMP8gs3mp2Wb38Y04m6PyYHRgR9fQXqb-Gy_QQZpO3B6qUKH0qi_C8Wwd0B4Fic/s1920/bg-image.jpg";
+                const img = media ? media.url : "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXN38RVcvmY7vKbwUw98jbel2wEDlpsa92aJPfNvmM_BlPYyxG86qfq8ZZhvM1pxvPIWP4DFmdh7phZs-OBKSfzgDWRnUO_X1TcA9238ngHbPMhZNkJPckt_FnMbVtN5Hg1kORoCKx3Urm7nASy9ugfJnkq14526d96auoNXZI20hxGIeVxfkM3AFUcRg/s1200/Coming%20soon%20...%20.jpg";
 
                     // ★ 画像サイズを変更：例 s400（幅400px）に
                     if (media) {
@@ -111,6 +111,7 @@ topics.forEach(topic => {
     });
 
 });
+
 
 
 
